@@ -10,19 +10,20 @@ Setiap thread bertugas menambahkan data komik ke dalam database secara paralel, 
 
 # 🧱 Struktur Tabel Database
 Database: komik_db
+
 Tabel: komik
 
-Kolom	Tipe Data	Keterangan
+`Kolom	Tipe Data	Keterangan`
 
-id	INT (Auto Increment)	Primary Key
+`id	INT (Auto Increment)	Primary Key`
 
-judul	VARCHAR(100)	Judul komik
+`judul	VARCHAR(100)	Judul komik`
 
-pengarang	VARCHAR(100)	Nama pengarang
+`pengarang	VARCHAR(100)	Nama pengarang`
 
-genre	VARCHAR(50)	Genre komik
+`genre	VARCHAR(50)	Genre komik`
 
-tahun_rilis	INT	Tahun rilis komik
+`tahun_rilis	INT	Tahun rilis komik`
 
 # 💻 Langkah Menjalankan Program
 1. Persiapan Database
@@ -30,24 +31,28 @@ tahun_rilis	INT	Tahun rilis komik
 - Buka phpMyAdmin → buat database baru dengan nama: `komik_db`
 - Jalankan SQL berikut untuk membuat tabel:
 
-CREATE TABLE komik (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    
-    judul VARCHAR(100),
-    
-    pengarang VARCHAR(100),
-    
-    genre VARCHAR(50),
-    
-    tahun_rilis INT
-);
+` CREATE TABLE komik (`
+  
+ ` id INT AUTO_INCREMENT PRIMARY KEY,`
+  
+ ` judul VARCHAR(100),`
+
+ ` pengarang VARCHAR(100),`
+ 
+ ` genre VARCHAR(50),`
+ 
+ ` tahun_rilis INT`
+
+`);`
 
 2. Konfigurasi JDBC di Kode Java
 - Pastikan koneksi JDBC di file DBConnection.java seperti ini:
 
-`String url = "jdbc:mysql://localhost:3306/komik_db";
-String user = "root";
-String password = "";`
+`String url = "jdbc:mysql://localhost:3306/komik_db";`
+
+`String user = "root";`
+
+`String password = "";`
 
 - Sesuaikan user dan password sesuai konfigurasi XAMPP kamu.
 
@@ -78,5 +83,6 @@ Nama: Karina Septia Suwandi
 NIM: F1D02310066
 
 Mata Kuliah: Pemrograman Berorientasi Objek
+
 
 
