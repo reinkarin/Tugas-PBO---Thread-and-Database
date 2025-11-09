@@ -13,10 +13,15 @@ Database: komik_db
 Tabel: komik
 
 Kolom	Tipe Data	Keterangan
+
 id	INT (Auto Increment)	Primary Key
+
 judul	VARCHAR(100)	Judul komik
+
 pengarang	VARCHAR(100)	Nama pengarang
+
 genre	VARCHAR(50)	Genre komik
+
 tahun_rilis	INT	Tahun rilis komik
 
 # 💻 Langkah Menjalankan Program
@@ -26,19 +31,19 @@ tahun_rilis	INT	Tahun rilis komik
 - Jalankan SQL berikut untuk membuat tabel:
 
 CREATE TABLE komik (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+`    id INT AUTO_INCREMENT PRIMARY KEY,
     judul VARCHAR(100),
     pengarang VARCHAR(100),
     genre VARCHAR(50),
     tahun_rilis INT
-);
+);`
 
 2. Konfigurasi JDBC di Kode Java
 - Pastikan koneksi JDBC di file DBConnection.java seperti ini:
 
-String url = "jdbc:mysql://localhost:3306/komik_db";
+`String url = "jdbc:mysql://localhost:3306/komik_db";
 String user = "root";
-String password = "";
+String password = "";`
 
 - Sesuaikan user dan password sesuai konfigurasi XAMPP kamu.
 
@@ -46,12 +51,12 @@ String password = "";
 - Jalankan file MainApp.java melalui Eclipse, IntelliJ, atau terminal: java MainApp
 - Jika berhasil, akan muncul output seperti ini di console:
 
-? Koneksi ke MySQL berhasil!
+`? Koneksi ke MySQL berhasil!
 ? Komik "Naruto" berhasil ditambahkan oleh thread: Thread-1
 ? Komik "Attack on Titan" berhasil ditambahkan oleh thread: Thread-3
 ? Komik "One Piece" berhasil ditambahkan oleh thread: Thread-0
 ? Komik "Doraemon" berhasil ditambahkan oleh thread: Thread-2
-? Komik "Spy x Family" berhasil ditambahkan oleh thread: Thread-4
+? Komik "Spy x Family" berhasil ditambahkan oleh thread: Thread-4`
 
 # 🧠 Konsep yang Diterapkan
 - Multithreading
@@ -65,5 +70,8 @@ JDBC digunakan untuk menghubungkan program Java dengan MySQL, memungkinkan opera
 
 # 👩‍💻 Dibuat oleh
 Nama: Karina Septia Suwandi
+
 NIM: F1D02310066
+
 Mata Kuliah: Pemrograman Berorientasi Objek
+
