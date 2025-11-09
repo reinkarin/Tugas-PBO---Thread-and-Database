@@ -31,12 +31,16 @@ tahun_rilis	INT	Tahun rilis komik
 - Jalankan SQL berikut untuk membuat tabel:
 
 CREATE TABLE komik (
-`    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    
     judul VARCHAR(100),
+    
     pengarang VARCHAR(100),
+    
     genre VARCHAR(50),
+    
     tahun_rilis INT
-);`
+);
 
 2. Konfigurasi JDBC di Kode Java
 - Pastikan koneksi JDBC di file DBConnection.java seperti ini:
@@ -74,4 +78,5 @@ Nama: Karina Septia Suwandi
 NIM: F1D02310066
 
 Mata Kuliah: Pemrograman Berorientasi Objek
+
 
