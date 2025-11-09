@@ -60,12 +60,17 @@ Tabel: komik
 - Jalankan file MainApp.java melalui Eclipse, IntelliJ, atau terminal: java MainApp
 - Jika berhasil, akan muncul output seperti ini di console:
 
-`? Koneksi ke MySQL berhasil!
-? Komik "Naruto" berhasil ditambahkan oleh thread: Thread-1
-? Komik "Attack on Titan" berhasil ditambahkan oleh thread: Thread-3
-? Komik "One Piece" berhasil ditambahkan oleh thread: Thread-0
-? Komik "Doraemon" berhasil ditambahkan oleh thread: Thread-2
-? Komik "Spy x Family" berhasil ditambahkan oleh thread: Thread-4`
+`? Koneksi ke MySQL berhasil!`
+
+`? Komik "Naruto" berhasil ditambahkan oleh thread: Thread-1`
+
+`? Komik "Attack on Titan" berhasil ditambahkan oleh thread: Thread-3`
+
+`? Komik "One Piece" berhasil ditambahkan oleh thread: Thread-0`
+
+`? Komik "Doraemon" berhasil ditambahkan oleh thread: Thread-2`
+
+`? Komik "Spy x Family" berhasil ditambahkan oleh thread: Thread-4`
 
 # 🧠 Konsep yang Diterapkan
 - Multithreading
@@ -83,6 +88,7 @@ Nama: Karina Septia Suwandi
 NIM: F1D02310066
 
 Mata Kuliah: Pemrograman Berorientasi Objek
+
 
 
 
